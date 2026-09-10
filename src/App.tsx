@@ -138,14 +138,6 @@ export default function App() {
           </div>
         </section>
 
-        <section className="mx-auto mt-12 max-w-3xl rounded-3xl bg-white p-7 text-center shadow-xl ring-1 ring-stone-200 sm:p-10">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-emerald-700">Oferta Erbora 18-IN-1</p>
-          <h2 className="mt-3 text-3xl font-black text-stone-900">Comece a sua nova rotina de bem-estar</h2>
-          <p className="mt-4 text-stone-600">Acesse a página oficial para consultar o preço atual, a disponibilidade e as condições especiais da oferta.</p>
-          <div className="mt-7"><Cta>Ver preço e disponibilidade</Cta></div>
-          <div className="mt-6 rounded-2xl bg-emerald-50 p-4 text-sm text-emerald-900"><strong>Garantia de satisfação:</strong> consulte os detalhes e o prazo da garantia diretamente na página oficial do produto.</div>
-        </section>
-
         <p className="mx-auto mt-10 max-w-3xl text-center text-xs leading-relaxed text-stone-500">
           Aviso: este conteúdo tem finalidade informativa e publicitária. Erbora 18-IN-1 não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Os resultados podem variar. Consulte um profissional de saúde antes de iniciar qualquer suplemento, especialmente se estiver grávida, amamentando ou usando medicamentos.
         </p>
