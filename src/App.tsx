@@ -5,22 +5,38 @@ const productUrl =
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white font-sans text-stone-800 pt-16 pb-20">
-      {/* Fixed Topbar */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a3a5c] text-white shadow-md">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-8">
-          <div className="text-xl font-bold uppercase tracking-wider font-serif">Health Daily Report</div>
-          <nav className="text-sm font-medium hidden sm:block text-slate-200">
-            <span className="cursor-pointer hover:text-white transition-colors">Trending Today</span>
-          </nav>
+    <div className="min-h-screen bg-white font-sans text-stone-800 pt-24 pb-20">
+      {/* Fixed Topbar & Header Wrapper */}
+      <div className="fixed top-0 left-0 right-0 z-50">
+        {/* Announcement Bar */}
+        <div className="bg-[#c0392b] text-white text-xs sm:text-sm text-center py-1.5 px-4 font-bold tracking-widest uppercase">
+          ⚠️ Limited Supply — Special Reader Offer Available Today
         </div>
-      </header>
+        {/* Main Header */}
+        <header className="bg-[#1a3a5c] text-white shadow-md">
+          <div className="mx-auto flex h-14 sm:h-16 max-w-6xl items-center justify-between px-4 sm:px-8">
+            <div className="text-lg sm:text-xl font-bold uppercase tracking-wider font-serif">Health Daily Report</div>
+            <nav className="text-sm font-medium hidden sm:block text-slate-200">
+              <span className="cursor-pointer hover:text-white transition-colors">Trending Today</span>
+            </nav>
+          </div>
+        </header>
+      </div>
 
       {/* Main Content Area */}
       <main className="mx-auto max-w-6xl px-4 py-8 sm:px-8 md:flex md:gap-12">
         
         {/* Left Column / Main Article */}
         <article className="md:w-2/3">
+          {/* Breadcrumb */}
+          <nav className="mb-5 text-xs sm:text-sm text-stone-500 font-sans uppercase tracking-wider font-semibold">
+            <a href="#" className="hover:text-[#c0392b] transition-colors">Home</a>
+            <span className="mx-2">/</span>
+            <a href="#" className="hover:text-[#c0392b] transition-colors">Health News</a>
+            <span className="mx-2">/</span>
+            <span className="text-stone-800">Special Report</span>
+          </nav>
+
           <h1 className="font-serif text-3xl font-extrabold leading-tight text-[#1a3a5c] sm:text-4xl md:text-5xl">
             Special Report: The Secret to Finding Daily Balance and Vitality
           </h1>
@@ -30,7 +46,7 @@ export default function App() {
             <span>Health Editorial Team</span>
           </div>
 
-          <div className="my-8 aspect-video w-full bg-slate-100 flex flex-col items-center justify-center border-2 border-dashed border-slate-300 text-slate-500 rounded-xl overflow-hidden">
+          <div className="my-8 aspect-video w-full bg-slate-100 flex flex-col items-center justify-center border-2 border-dashed border-slate-300 text-slate-500 rounded-xl overflow-hidden shadow-sm">
             <span className="text-lg font-bold">[Main Image / GIF Placeholder]</span>
             <span className="text-sm mt-1">Insert compelling visual here</span>
           </div>
@@ -52,8 +68,16 @@ export default function App() {
               ingredients like oregano oil and carvacrol have shown remarkable potential. 
               This is where Erbora 18-IN-1 comes into the picture.
             </p>
+
+            {/* Blockquote feature */}
+            <blockquote className="my-8 border-l-4 border-[#1a3a5c] bg-slate-50 p-6 sm:p-8 italic text-stone-700 font-serif text-xl sm:text-2xl shadow-inner rounded-r-2xl">
+              "Finding the right natural balance completely transformed my daily routine. I finally feel like myself again, without relying on harsh alternatives. It was like a fog lifted from my mind."
+              <footer className="mt-4 text-sm font-sans font-bold not-italic text-[#c0392b] uppercase tracking-wider">
+                — Lisa Caldwell, Health & Wellness Advocate
+              </footer>
+            </blockquote>
             
-            <div className="my-8 aspect-square sm:aspect-video w-full bg-slate-100 flex flex-col items-center justify-center border-2 border-dashed border-slate-300 text-slate-500 rounded-xl overflow-hidden">
+            <div className="my-8 aspect-square sm:aspect-video w-full bg-slate-100 flex flex-col items-center justify-center border-2 border-dashed border-slate-300 text-slate-500 rounded-xl overflow-hidden shadow-sm">
               <span className="text-lg font-bold">[Testimonial Image Placeholder]</span>
               <span className="text-sm mt-1">Insert before/after or product shot here</span>
             </div>
@@ -94,7 +118,7 @@ export default function App() {
 
         {/* Right Sidebar */}
         <aside className="mt-16 md:mt-0 md:w-1/3">
-          <div className="sticky top-24 space-y-8">
+          <div className="sticky top-28 space-y-8">
             {/* Sidebar Widget 1 */}
             <div className="rounded-xl border border-stone-200 bg-white p-6 shadow-sm">
               <h3 className="font-sans text-lg font-bold text-[#1a3a5c] border-b border-stone-200 pb-3 mb-5 uppercase tracking-wide">
@@ -116,7 +140,7 @@ export default function App() {
 
             {/* Sidebar CTA Widget */}
             <div className="rounded-xl bg-stone-50 p-6 text-center border border-stone-200 shadow-md">
-              <div className="aspect-square w-2/3 mx-auto bg-slate-100 flex flex-col items-center justify-center border-2 border-dashed border-slate-300 text-slate-500 rounded-full mb-6 overflow-hidden">
+              <div className="aspect-square w-2/3 mx-auto bg-slate-100 flex flex-col items-center justify-center border-2 border-dashed border-slate-300 text-slate-500 rounded-full mb-6 overflow-hidden shadow-sm">
                 <span className="font-bold text-sm">[Product]</span>
               </div>
               <h3 className="text-xl font-bold mb-2 text-[#1a3a5c] font-serif">Special Reader Discount</h3>
